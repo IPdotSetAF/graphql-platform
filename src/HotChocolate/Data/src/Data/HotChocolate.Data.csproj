@@ -9,15 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\GreenDonut\src\GreenDonut.Data.Abstractions\GreenDonut.Data.Abstractions.csproj" />
-    <ProjectReference Include="..\..\..\..\GreenDonut\src\GreenDonut.Data.Primitives\GreenDonut.Data.Primitives.csproj" />
-    <ProjectReference Include="..\..\..\..\GreenDonut\src\GreenDonut.Data\GreenDonut.Data.csproj" />
-    <ProjectReference Include="..\..\..\Core\src\Execution.Projections\HotChocolate.Execution.Projections.csproj" />
-    <ProjectReference Include="..\..\..\Core\src\Execution\HotChocolate.Execution.csproj" />
-    <ProjectReference Include="..\..\..\Core\src\Types.CursorPagination\HotChocolate.Types.CursorPagination.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <InternalsVisibleTo Include="HotChocolate.Data.Sorting.InMemory.Tests" />
     <InternalsVisibleTo Include="HotChocolate.Data.Sorting.SqlLite.Tests" />
     <InternalsVisibleTo Include="HotChocolate.Data.Filters.InMemory.Tests" />
@@ -40,6 +31,15 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\MSBuild\HotChocolate.Data.props" Pack="true" PackagePath="build/HotChocolate.Data.props" Visible="false" />
     <None Include="$(MSBuildThisFileDirectory)..\MSBuild\HotChocolate.Data.targets" Pack="true" PackagePath="build/HotChocolate.Data.targets" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GreenDonut.Data" />
+    <PackageReference Include="GreenDonut.Data.Abstractions" />
+    <PackageReference Include="GreenDonut.Data.Primitives" />
+    <PackageReference Include="HotChocolate.Execution" />
+    <PackageReference Include="HotChocolate.Execution.Projections" />
+    <PackageReference Include="HotChocolate.Types.CursorPagination" />
   </ItemGroup>
 
 </Project>

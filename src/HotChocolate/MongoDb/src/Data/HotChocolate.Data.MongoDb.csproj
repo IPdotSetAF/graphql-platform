@@ -8,13 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\src\Execution\HotChocolate.Execution.csproj"/>
-    <ProjectReference Include="..\..\..\Core\src\Types.OffsetPagination\HotChocolate.Types.OffsetPagination.csproj"/>
-    <ProjectReference Include="..\..\..\Data\src\Data\HotChocolate.Data.csproj"/>
-    <ProjectReference Include="..\Types\HotChocolate.Types.MongoDb.csproj"/>
+    <ProjectReference Include="..\..\..\Data\src\Data\HotChocolate.Data.csproj" />
+    <ProjectReference Include="..\Types\HotChocolate.Types.MongoDb.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotChocolate.Execution" />
+    <PackageReference Include="HotChocolate.Types.OffsetPagination" />
     <PackageReference Include="MongoDB.Driver" />
   </ItemGroup>
 
