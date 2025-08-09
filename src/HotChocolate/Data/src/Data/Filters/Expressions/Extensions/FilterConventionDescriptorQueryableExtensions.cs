@@ -54,7 +54,7 @@ public static class FilterConventionDescriptorQueryableExtensions
         descriptor.AddFieldHandler<QueryableEnumInHandler>();
         descriptor.AddFieldHandler<QueryableEnumNotInHandler>();
 
-        descriptor.AddFieldHandler<QueryableListAnyOperationHandler>();
+        descriptor.AddFieldHandler<QueryableDictionaryAnyOperationHandler>();
         descriptor.AddFieldHandler<QueryableListAllOperationHandler>();
         descriptor.AddFieldHandler<QueryableListNoneOperationHandler>();
         descriptor.AddFieldHandler<QueryableListSomeOperationHandler>();
